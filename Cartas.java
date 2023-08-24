@@ -4,15 +4,19 @@ public class Cartas {
 
     public static void main(String[] args){
 
-        do while{
+        do {
+            System.out.println("[1] ");
 
-        } (continuar=true)
+
+
+        } while (continuar=true);
 
     }
 
-    public int crearMatrizCartas(){
+    public String[][] crearMatrizCartas(){
 
-
+        String [][] matrizcartas = new String [2][12];
+        return matrizcartas;
 
     }
     public int agregarCartas(String nombreCarta, String puntaje){
@@ -21,13 +25,19 @@ public class Cartas {
 
     public void continuarJuego(){
 
-        private Scanner = new Scanner(System.in);
+        private Scanner sc = new Scanner(System.in);
         char respuesta;
+        boolean continuar = true;
+
         do{
-            System.out.println("Desea Segir Jugando? [s][n]");
+            System.out.println("Desea Seguir Jugando? [s][n]");
+            respuesta = sc.next();
 
+        } while (!(respuesta == 's' || respuesta == 'n'));
 
-        } while (respuesta
+        if(respuesta == 'n'){
+            continuar = false;
+        }
 
     } return continuar;
 }
