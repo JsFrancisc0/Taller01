@@ -5,7 +5,10 @@ public class Cartas {
     public static void main(String[] args){
 
         do {
-            System.out.println("[1] ");
+            System.out.println("[1] Iniciar Partida ");
+            System.out.println("[2] Agregar Cartas");
+            System.out.println("[3] ");
+            System.out.println("[4] ");
 
 
 
@@ -16,14 +19,22 @@ public class Cartas {
     public String[][] crearMatrizCartas(){
 
         String [][] matrizcartas = new String [2][12];
+
+        for(int i=0; i<matrizcartas.lenght; i++){
+
+
+
+        }
         return matrizcartas;
 
     }
-    public int agregarCartas(String nombreCarta, String puntaje){
+    public String[][] agregarCartas(String nombreCarta, String puntaje){
+
+
 
     }
 
-    public void continuarJuego(){
+    public boolean continuarJuego(){
 
         private Scanner sc = new Scanner(System.in);
         char respuesta;
@@ -39,5 +50,6 @@ public class Cartas {
             continuar = false;
         }
 
-    } return continuar;
+        return continuar;
+    }
 }
